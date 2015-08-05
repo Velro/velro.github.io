@@ -1,6 +1,10 @@
 ---
 title: Transform Hierarchy Decomposition
 layout: post
+category: Unity
+author: James Fulop
+
+excerpt: Learn how to reduce overhead from destroying complex objects by spreading out the destroy call.
 ---
 
 **TLDR:** Is your game lagging from destroying really big, complex objects? [Use this script to spread out the Destroy calls.](https://gist.github.com/Velro/3b10f4de8ba7188602a9)
@@ -13,7 +17,7 @@ Deleting a large number of objects at once can cause a Unity game to skip a coup
 
 Lets start by just calling `Delete(gameObject)` on the parent object. Here’s our latency on an i7 processor on a single frame.
 
-profiler image
+![My helpful screenshot]({{! site.url }}/assets/transform-hierarchy-decomposition/Destroy1500AtOnce.png)
 
 My strategy to get around this spike was to first disable all of the objects. This way are functionally out of the scene, then to start deleting one object per frame. I could have just left the objects disabled in my scene, but those objects were still taking up space in memory. For this particular example the memory footprint was low, as there were only a few meshes and textures, but when destroying more varied scenes it had a large impact on reducing my memory foot print.
 
