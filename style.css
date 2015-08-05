@@ -4,12 +4,10 @@ body {
     color:#564b47;  
     padding-left: 10px;
     padding-right: 10px;
-    position:fixed;
-    top: 0px;
-    left:0;
-    right:0;
     min-width:600;
 }
+
+
 
 body>header h1>a {
     color:#564b47;
