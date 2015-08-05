@@ -1,9 +1,9 @@
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
     color:#564b47;  
-    padding-left: 50px;
-    padding-right: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 body>header h1>a {
@@ -23,13 +23,13 @@ h1,h2,h3,h4 {
 hr {
     margin-left: 0;
     padding-left: 0;
-	width: 100%;
+	width: 80%;
 	min-width: 840px;
 }
 
 pre {
     background-color: #E8E8E8;
-    margin-left: 30px;
+    margin-left: 5px;
     padding: 5px;
     width: 80%;
 }
@@ -42,9 +42,9 @@ code {
 
 pre {
     background-color: #E8E8E8;
-    margin-left: 30px;
+    margin-left: 5px;
     padding: 5px;
-    width: 80%;
+    width: 100%;
 }
 
 table {
@@ -61,15 +61,15 @@ a:hover {
 
 main {
 
-	width: 75%;
+	width: 80%;
 	min-width: 600px;
-	margin-left: 150px;
+	margin-left: 0px;
 	display: block;
 }
 
 nav {
-	float: left;
-	width: 150px;
+	float: right;
+	width: 250px;
 	min-width: 150px;
 }
 
@@ -94,7 +94,7 @@ footer {
 }
 
 article {
-	margin: 10px;
+	margin: 0px;
 }
 
 article h2>a,
