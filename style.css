@@ -75,11 +75,18 @@ main {
 }
 
 nav {
-	float: right;
+	/*float: right;
 	width: 260px;
-	min-width: 150px;
-	/* position: absolute; */
-	/* left: 90%; */
+	min-width: 150px;*/
+	position: absolute;
+	left: 80%;
+}
+
+@media all and (max-width: 980px) {
+    nav{
+        
+        left: 780px;
+    }
 }
 
 nav a,
@@ -118,7 +125,7 @@ article h2>a:hover {
 }
 
 article .entry {
-	margin-left: 15px;
+	margin-left: 0px;
 	padding: 10px;
 }
 
