@@ -63,7 +63,7 @@ We'll name our class EnumeratedDestroy.
 
 To start, here’s how we declare a generic list of type `GameObject`. This list will eventually contain all of our objects in the order we want.
 
-{% highlight csharp linenos %}
+{% highlight csharp linenos=table %}
 
 using UnityEngine;
 using System.Collections;
@@ -83,7 +83,7 @@ public class EnumeratedDestroy : MonoBehaviour
 
 We can then make a list of lists so the script is flexible and will work with any sort of transform hierarchy.
 
-{% highlight csharp linenos %}
+{% highlight csharp linenos=table %}
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -104,7 +104,7 @@ public class EnumeratedDestroy : MonoBehaviour
 
 Now to fill these lists with objects. The best way seems to be with recursion for its flexibility. While iterating the children of a transform, if that child has its own children (read:grandchild), then recursively call at that depth. If while iterating over the hierarchy we end up deeper than we have before, add a list to our masterList for that depth. After generating these lists we can just iterate through the list of lists from last to first, adding their values to shallowList.
 
-{% highlight csharp linenos %}
+{% highlight csharp linenos=table %}
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -149,7 +149,7 @@ public class EnumeratedDestroy : MonoBehaviour
 
 Now we just need to actually destroy objects, which we put into a very simple coroutine. Here’s the full script!
 
-{% highlight csharp linenos %}
+{% highlight csharp linenos=table %}
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
