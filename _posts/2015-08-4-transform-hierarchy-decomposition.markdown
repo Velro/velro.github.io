@@ -59,7 +59,7 @@ In my case, I tend to keep my sub scenes as different groups of objects parented
 
 I decided the best way to do this was to create separate lists for each depth level.
 
-We'll name our class EnumeratedDestroy.
+We'll name our class 'EnumeratedDestroy'.
 
 To start, here’s how we declare a generic list of type `GameObject`. This list will eventually contain all of our objects in the order we want.
 

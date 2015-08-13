@@ -7,7 +7,7 @@ author: James Fulop
 excerpt: This info was not easily found online and I think other tech blog people using this website stack will want to be able to do this.
 ---
 {% raw  %}
-//TLDR: `{% highlight csharp linenos=table hl_lines="8 13" %}`
+TLDR: `{% highlight csharp linenos=table hl_lines="8 13" %}`
 {% endraw %}
 
 That's it really. To be more general:
